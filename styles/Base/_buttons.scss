@@ -1,0 +1,11 @@
+button {
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgb(192, 192, 192);
+  
+    &:hover,
+    &:active {
+        box-shadow: none;
+        cursor: pointer;
+    }
+  }

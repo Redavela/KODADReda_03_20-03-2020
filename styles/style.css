@@ -43,4 +43,221 @@ td, th {
   padding: 0;
 }
 
+button {
+  background: none;
+  border: none;
+  box-shadow: 0 5px 10px silver;
+}
+button:hover, button:active {
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 0;
+  width: 0;
+  position: fixed;
+  background-color: #9356dc;
+  opacity: 0;
+  animation: heart-loader 3s;
+}
+@keyframes heart-loader {
+  0%, 80% {
+    opacity: 1;
+    z-index: 20;
+  }
+  0%, 100% {
+    height: 100%;
+    width: 100%;
+  }
+}
+.loading--heart {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+.loading--heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #ff79da;
+  animation: loading-heart 3.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.loading--heart div:after, .loading--heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #ff79da;
+}
+.loading--heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+.loading--heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes loading-heart {
+  0% {
+    transform: scale(0.9);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  15% {
+    transform: scale(1.2);
+  }
+  30% {
+    transform: scale(0.9);
+  }
+  45% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 100%;
+  height: 70px;
+}
+
+.header img {
+  padding-top: 10px;
+  height: 40px;
+  width: 200px;
+  margin: auto;
+}
+
+.Explore {
+  font-family: "Roboto", sans-serif;
+  background: #f2f2f2;
+}
+.Explore__location {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: inset 0px 11px 8px -10px #949494;
+  background: #e4e4e4;
+}
+.Explore__location button {
+  box-shadow: none;
+  font-size: 16px;
+  margin-right: 25px;
+  transition: color 0.8s;
+}
+.Explore__location button:hover, .Explore__location button:active {
+  color: #ff79da;
+}
+.Explore__location button .fas {
+  margin-right: 15px;
+}
+.Explore__infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px;
+  text-align: center;
+}
+.Explore__infos h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.Explore__infos span {
+  margin: 14px 0;
+  font-size: 14px;
+}
+.Explore__infos--btn {
+  margin: 14px;
+  font-size: 17px;
+  color: #f2f2f2;
+  padding: 18px 22px;
+  border-radius: 26px;
+  background: linear-gradient(#ff79da 0%, #9356dc 100%);
+  transition: all 0.5s ease-out;
+}
+.Explore__infos--btn:hover, .Explore__infos--btn:active {
+  color: black;
+  background: #ff79da;
+}
+
+.steps {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.steps h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.steps i {
+  color: #747474;
+  margin: 0 25px 0 35px;
+}
+.steps__function {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.steps__btn {
+  height: 75px;
+  min-width: 300px;
+  width: 100%;
+  max-width: 500px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  margin-bottom: 25px;
+  font-size: 17px;
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+  transition: background-color 0.4s box-shadow 0.4s;
+}
+.steps__btn:hover, .steps__btn:active {
+  background-color: #ddc7f8;
+}
+.steps__btn:hover i, .steps__btn:active i {
+  color: #9356dc;
+}
+.steps__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #9356dc;
+  position: absolute;
+  left: -13px;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 0.9em;
+}
+
 /*# sourceMappingURL=style.css.map */
