@@ -360,6 +360,20 @@ button:hover, button:active {
     margin: 10px 0;
   }
 }
+@media screen and (min-width: 1020px) and (max-width: 1430px) {
+  .choices__info {
+    max-width: none;
+    min-width: none;
+    width: 35%;
+    margin: 10px 50px;
+  }
+
+  h2 {
+    width: 65%;
+    margin: auto;
+    padding-bottom: 40px;
+  }
+}
 .footer {
   background-color: #353535;
   padding: 25px 0 35px 20px;
