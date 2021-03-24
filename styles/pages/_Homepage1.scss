@@ -9,6 +9,22 @@
       @include center;
       box-shadow: inset 0px 11px 8px -10px rgb(148, 148, 148);
       background: rgb(228, 228, 228);
+
+      & button {
+        box-shadow: none;
+        font-size: 16px;
+        margin-right: 25px;
+        transition: color 0.8s;
+    
+        &:hover,
+        &:active {
+          color: $secondary;
+        }
+    
+        .fas {
+          margin-right: 15px;
+        }
+      }
     }
     &__infos {
       @include column_center;
@@ -117,7 +133,7 @@
   &__info {
       position: relative;
       border-radius: 20px;
-      max-width: 325px;
+      max-width: 330px;
       height: 255px;
       box-shadow:0 5px 15px $shadow;
       margin: 10px 10px;
@@ -162,4 +178,13 @@
 
   }
   
+}
+@media screen and (max-width:430px){
+  .choices__info {
+      min-width: 295px;
+      width: 375px;
+      height: 230px;
+      margin: 10px 0;
+  }
+
 }

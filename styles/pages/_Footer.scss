@@ -16,6 +16,7 @@
     }
     a {
         color: $background;
+        transition: color 0.8s;
         &:hover{
             color: $secondary;
         }
@@ -26,5 +27,11 @@
     }
     .fa-utensils {
         margin-right: 8px;
+    }
+}
+@media screen and (min-width:425px) {
+    .footer{
+    @include column_center;
+    text-align:center;
     }
 }
