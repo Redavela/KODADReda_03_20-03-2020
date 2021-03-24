@@ -62,19 +62,6 @@ button:hover, button:active {
   cursor: pointer;
 }
 
-.Explore__infos .button {
-  box-shadow: none;
-  font-size: 16px;
-  margin-right: 25px;
-  transition: color 0.8s;
-}
-.Explore__infos .button:hover, .Explore__infos .button:active {
-  color: #ff79da;
-}
-.Explore__infos .button .fas {
-  margin-right: 15px;
-}
-
 .coeur {
   font-size: 25px;
   margin-top: 5px;
@@ -186,6 +173,14 @@ button:hover, button:active {
   height: 40px;
   width: 200px;
   margin: auto;
+}
+
+.return {
+  color: #363636;
+  font-size: 20px;
+  position: absolute;
+  top: 28px;
+  left: 15px;
 }
 
 .Explore {
