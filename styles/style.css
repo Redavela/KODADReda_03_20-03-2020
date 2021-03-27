@@ -415,7 +415,17 @@ button:hover, button:active {
 }
 .menu__section {
   width: 98%;
+  min-height: 360px;
   margin: auto;
+}
+.menu__section .number1 {
+  animation: slide 1s ease-in-out;
+}
+.menu__section .number2 {
+  animation: slide 1.2s ease-in-out;
+}
+.menu__section .number3 {
+  animation: slide 1.4s ease-in-out;
 }
 .menu__div {
   position: relative;
@@ -440,33 +450,6 @@ button:hover, button:active {
 }
 .menu__div:hover .check, .menu__div:active .check {
   transform: rotate(0deg);
-}
-.menu__div:nth-child(1) {
-  animation: slide 1.4s ease-in-out;
-}
-.menu__div:nth-child(2) {
-  animation: slide 1.7ms ease-in-out;
-}
-.menu__div:nth-child(3) {
-  animation: slide 2s ease-in-out;
-}
-.menu__div:nth-child(4) {
-  animation: slide 1.4s ease-in-out;
-}
-.menu__div:nth-child(5) {
-  animation: slide 1.7ms ease-in-out;
-}
-.menu__div:nth-child(6) {
-  animation: slide 2s ease-in-out;
-}
-.menu__div:nth-child(7) {
-  animation: slide 1.4s ease-in-out;
-}
-.menu__div:nth-child(8) {
-  animation: slide 1.7ms ease-in-out;
-}
-.menu__div:nth-child(9) {
-  animation: slide 2s ease-in-out;
 }
 .menu h3 {
   font-size: 17px;
@@ -541,7 +524,7 @@ button:hover, button:active {
 
 @keyframes slide {
   0% {
-    transform: translateY(35px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {

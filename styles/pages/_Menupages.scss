@@ -34,7 +34,18 @@
 
     &__section {
         width: 98%;
+        min-height: 360px;
         margin: auto;
+
+        .number1{
+        animation: slide 1s  ease-in-out;    
+        }
+        .number2{
+        animation: slide 1.2s  ease-in-out;    
+        }
+        .number3{
+        animation: slide 1.4s  ease-in-out;    
+        }
     }
     &__div {
         position: relative;
@@ -64,33 +75,7 @@
         &:active .check{
         transform: rotate(0deg)
         }
-        &:nth-child(1) {
-            animation: slide 1.4s  ease-in-out;    
-    }
-        &:nth-child(2) {
-            animation: slide 1.7ms  ease-in-out;    
-    }
-        &:nth-child(3) {
-            animation: slide 2s  ease-in-out;    
-    }
-        &:nth-child(4) {
-            animation: slide 1.4s  ease-in-out;    
-    }
-        &:nth-child(5) {
-            animation: slide 1.7ms  ease-in-out;    
-    }
-        &:nth-child(6) {
-            animation: slide 2s  ease-in-out;    
-    }
-        &:nth-child(7) {
-            animation: slide 1.4s  ease-in-out;    
-    }
-        &:nth-child(8) {
-            animation: slide 1.7ms  ease-in-out;    
-    }
-        &:nth-child(9) {
-            animation: slide 2s  ease-in-out;    
-    }
+        
     }
 
     h3 {
@@ -172,7 +157,7 @@
 }
 @keyframes slide{
     0%{ 
-        transform: translateY(35px);
+        transform: translateY(20px);
         opacity: 0;
     }
     100% {
