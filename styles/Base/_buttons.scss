@@ -19,6 +19,7 @@ button {
     -webkit-text-stroke-color: grey;
 }
 .coeur:hover {
+    cursor: pointer;
     background: linear-gradient(to bottom left,$primary,$secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
