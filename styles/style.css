@@ -275,7 +275,7 @@ button:hover, button:active {
   font-weight: bold;
   position: relative;
   text-align: left;
-  transition: background-color 0.4s box-shadow 0.4s;
+  transition: background-color 0.4s;
 }
 .steps__btn:hover, .steps__btn:active {
   background-color: #ddc7f8;
@@ -368,9 +368,7 @@ button:hover, button:active {
 }
 @media screen and (min-width: 920px) and (max-width: 1430px) {
   .choices__info {
-    max-width: none;
-    min-width: none;
-    width: 35%;
+    min-width: 35%;
     margin: 10px 50px;
   }
 
