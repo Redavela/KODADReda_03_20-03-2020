@@ -137,6 +137,7 @@
       position: relative;
       border-radius: 20px;
       max-width: 330px;
+      min-width: 280px;
       height: 255px;
       box-shadow:0 5px 15px $shadow;
       margin: 10px 10px;
@@ -191,7 +192,7 @@
   }
 
 }
-@media screen and (min-width: 1020px) and (max-width:1430px){
+@media screen and (min-width: 920px) and (max-width:1430px){
   .choices__info {
     max-width: none;
     min-width: none;
