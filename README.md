@@ -1,6 +1,8 @@
-# KODADReda_03_20-03-2020
-This is my third project from my training
+# OPENCLASSROOMS PROJECT 3
+Build an HTML / CSS mobile-first website based on a given mockup.
 
-In that project i used HTML CSS and SCSS and i added some animation.
+# Technologies used
+HTML5
+SCSS
+CSS animation 
 
-Step by step we go forward
